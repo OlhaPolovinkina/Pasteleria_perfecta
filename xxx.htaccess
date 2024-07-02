@@ -1,0 +1,3 @@
+#Para gestionar paginas de error:
+
+ErrorDocument 404 /ftpAlumnos/07/404.html

@@ -1,0 +1,94 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 1s;
+}
+
+body {
+    font-family: "Exo 2", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Sedan", serif;
+}
+
+h3,
+h4 {
+    font-size: 1.5em;
+}
+
+#primera {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(13, 63, 63);
+    margin: 0;
+}
+h1 {
+    font-size: 80px;
+    color: rgb(243, 82, 18);
+}
+p {
+    padding: 1.5em;
+    font-size: 20px;
+    color: #fff;
+    white-space: nowrap;
+    border-right: solid 3px #fff;
+    overflow: hidden;
+    margin-bottom: 2em;
+    animation: animated-text 4s steps(25) 1s 1 normal both, animated-cursor 600ms steps(25) infinite;
+}
+
+.back-home {
+    margin: 3em 0 0 3em;
+    border: 2px solid #222;
+    color: #fff;
+    text-transform: uppercase;
+    padding: .75em 1em 0.6em;
+    transition: all 0.2s linear;
+    box-shadow: 10px 25px 5px 0px rgba(79,74,79,1);
+    background: rgb(238, 93, 36);
+    border-radius: 6px;
+}
+
+.back-home:hover {
+    background: #31610a;
+    color: #ddd;
+}
+
+@keyframes animated-text {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 340px;
+    }
+}
+
+@keyframes animated-cursor {
+    from {
+        border-right-color: #fff;
+    }
+
+    to {
+        border-right-color: transparent;
+    }
+}
+
+@keyframes rotating {
+    to {
+        transform: rotate(360deg);
+    }
+}
